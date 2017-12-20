@@ -1,4 +1,6 @@
 def insert_sorting(arr):
+    if len(arr) <= 1:
+        return arr
     for i in range(1, len(arr)):
         j = 1
         while (arr[i] < arr[i - j] and i - j >= 0):
